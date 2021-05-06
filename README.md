@@ -1,2 +1,2 @@
 # competitoranalysis
-Competitor analysis based on landing page scraping
+Competitor analysis based on competitors' landing page scraping
