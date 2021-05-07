@@ -3,13 +3,20 @@ import os
 import spacy
 import argparse
 import keyword_extractor
+import json
 
 def proc(output):
         
     print(output,"\n\n")
-    #####Load the html file to be analysed
-    soup = BeautifulSoup((open(output, encoding="utf-8").read()), features="html.parser") #<------------------------- PODE NÃO ESTAR A APANHAR TUDO
+    #Load the html file to be analysed
+    soup = BeautifulSoup((open(output, encoding="utf-8").read()), features="html.parser") #<------------------------- PODE NÃO ESTAR A APANHAR TUDO. TENTAR LXML
+    
+    #VER SE HÁ JSON NO HTML
 
+    #SE EXISTIR, FAZER O PARSE DO BLOCO JSON
+    
+    #SE NÃO EXISTIR, SEGUIR COM HTML
+    
     #Collect the name of the competitor under analysis
     ent_name = output.split("_")[-1].split('.')[0]
     new_folder = os.path.join('C:\\Users\\TiagoGodinho\\Desktop\\Projects\\scraper.cfg\\',ent_name)
