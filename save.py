@@ -1,10 +1,11 @@
 import os
 import argparse
+from config import PATH_TO_SAVE_OUTPUT
 
 # transform the parsed argument in the variable for the scraper
 
 def saver(folder_name):
-    folder = os.path.join('C:\\Users\\TiagoGodinho\\Desktop\\Projects\\scraper.cfg\\', folder_name)
+    folder = os.path.join(PATH_TO_SAVE_OUTPUT, folder_name)
     os.makedirs(folder)
     print(f"\n\n\nNew folder created with {folder_name} name\n\n\n")
     return folder

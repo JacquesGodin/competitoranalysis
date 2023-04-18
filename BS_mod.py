@@ -4,6 +4,7 @@ import spacy
 import argparse
 import keyword_extractor
 import json
+from config import PATH_TO_SAVE_OUTPUT
 
 def proc(output):
         
@@ -19,7 +20,7 @@ def proc(output):
     
     #Collect the name of the competitor under analysis
     ent_name = output.split("_")[-1].split('.')[0]
-    new_folder = os.path.join('C:\\Users\\TiagoGodinho\\Desktop\\Projects\\scraper.cfg\\',ent_name)
+    new_folder = os.path.join(PATH_TO_SAVE_OUTPUT,ent_name)
 
     text = str(soup.getText(separator="\n", strip=True))
     
