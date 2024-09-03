@@ -5,7 +5,7 @@ import save
 import os
 
 #API key for ScraperAPI account
-client = ScraperAPIClient('d25d1e44145a496d29e291923788dfed')
+client = ScraperAPIClient('d25d1e44145a496d29e291923788dfeb')
 
 #Parser for the website argument
 parser = argparse.ArgumentParser()
